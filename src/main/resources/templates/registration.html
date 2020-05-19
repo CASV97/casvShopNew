@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SignUp</title>
+</head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<body>
+	<div class="container">
+		<div>
+			<h1>form</h1>
+			<br />
+			<form action="/" method="POST" enctype="utf8">
+				<div class="form-group row">
+					<label class="col-sm-3">first</label> <span class="col-sm-5"><input
+						class="form-control" name="firstName" value="" required="required" /></span>
+					<span id="firstNameError" class="alert alert-danger col-sm-4"
+						style="display: none"></span>
+
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-3">last</label> <span class="col-sm-5"><input
+						class="form-control" name="lastName" value="" required="required" /></span>
+					<span id="lastNameError" class="alert alert-danger col-sm-4"
+						style="display: none"></span>
+
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-3">email</label> <span class="col-sm-5"><input
+						type="email" class="form-control" name="email" value=""
+						required="required" /></span> <span id="emailError"
+						class="alert alert-danger col-sm-4" style="display: none"></span>
+
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-3">password</label> <span class="col-sm-5"><input
+						id="password" class="form-control" name="password" value=""
+						type="password" required="required" /></span> <span id="passwordError"
+						class="alert alert-danger col-sm-4" style="display: none"></span>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-3">confirm</label> <span class="col-sm-5"><input
+						id="matchPassword" class="form-control" name="matchingPassword"
+						value="" type="password" required="required" /></span> <span
+						id="globalError" class="alert alert-danger col-sm-4"
+						style="display: none"></span>
+				</div>
+
+				<br />
+				<button type="submit" class="btn btn-primary">submit</button>
+			</form>
+			<br /> <a>login</a>
+		</div>
+	</div>
+</body>
+</html>
