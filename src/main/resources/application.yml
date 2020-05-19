@@ -1,0 +1,14 @@
+spring:
+  banner:
+    location: banner.txt
+  datasource:
+    url: jdbc:mysql://localhost:3307/casvdb?serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQLDialect
