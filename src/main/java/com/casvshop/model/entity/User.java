@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+
+
 import javax.persistence.JoinColumn;
 
 @Entity
@@ -18,12 +20,12 @@ import javax.persistence.JoinColumn;
 public class User {
 
 	@Id
-	@Column(unique = true, nullable = false)
+	@Column(unique = true, nullable = false, length=45)
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
 	private String firstName;
-
+	
 	private String lastName;
 
 	private String email;
