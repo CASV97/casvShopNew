@@ -3,8 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Home</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 </head>
 <body>
-	<h1>Wellcome <span th:text="${user.userName}"></span> </h1>
+	<h1>
+		Wellcome <span th:text="${user.userName}"></span>
+	</h1>
+	<form th:action="@{/logout}" method="post">
+			<button class="btn btn-lg btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</button>
+		</form>
 </body>
 </html>
